@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.unibas.grigala.tetris">
+
+    <uses-sdk android:minSdkVersion="9" android:targetSdkVersion="16"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN"/>
+
+    <application android:allowBackup="true" android:icon="@drawable/tetris_logo_ea" android:label="@string/app_name" android:theme="@style/AppTheme">
+        <activity android:label="@string/app_name" android:name="com.unibas.grigala.tetris.MainMenu" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <activity android:name="com.unibas.grigala.tetris.ConnectionActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+            </activity>
+        <activity android:name="com.unibas.grigala.tetris.NewActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+        <activity android:name="com.unibas.grigala.tetris.ManageProfile" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+
+        <activity android:name="com.unibas.grigala.tetris.TetrisBlastActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
+        </activity>
+
+        <activity android:configChanges="orientation|keyboardHidden" android:label="@string/select_device" android:name="com.unibas.grigala.tetris.DeviceListActivity" android:screenOrientation="portrait" android:theme="@android:style/Theme.Dialog">
+        </activity>
+
+    </application>
+
+</manifest>
